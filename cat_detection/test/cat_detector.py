@@ -28,7 +28,7 @@ for (i, (x, y, w, h)) in enumerate(rects):
 	cv2.putText(image, "Cat #{}".format(i + 1), (x, y - 10),
 		cv2.FONT_HERSHEY_SIMPLEX, 0.55, (0, 0, 255), 2)
 #write the image
-cv2.imwrite('../../CatDetection-HaarCascade/result.jpg', image)
+cv2.imwrite('../CatDetection-HaarCascade/result.jpg', image)
 # show the detected cat faces
 cv2.imshow("Cat Faces", image)
 cv2.waitKey(0)
